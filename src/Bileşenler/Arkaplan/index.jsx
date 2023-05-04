@@ -1,10 +1,10 @@
 import "../../index.css"
-import  yagmurlu from '../../Resimler/rainy.jpg'
-function Index() {
+import ResimCek from "./ResimCek"
+function Index({arkaplan}) {
   return (
     <div className='arkaplan'>
         <div className='overlay'></div>
-        <img className="arkaplan-resim" src={yagmurlu}/>
+        <ResimCek durum={arkaplan}/>
     </div>
   )
 }
